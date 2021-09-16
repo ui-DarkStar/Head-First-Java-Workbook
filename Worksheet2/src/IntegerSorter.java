@@ -16,7 +16,7 @@ public class IntegerSorter {
 	}
 
 
-	public static void arraySort(int array[]) {
+	public static void bubbleSort(int array[]) {
 		boolean swap;
 		int run = 1;
 
@@ -35,7 +35,7 @@ public class IntegerSorter {
 
 
 			}
-			if(swap = true) {
+			if(swap == true) {
 			System.out.println("the number of sort runs is " + run + " and the order is");
 			print(array);
 			run ++;
@@ -65,16 +65,8 @@ public class IntegerSorter {
 
 		System.out.println("The list of unsorted numbers are");
 		print(integerArray);
-		arraySort(integerArray);
+		bubbleSort(integerArray);
 
 	}
 }
-//LOOP UNTIL NO SWAPPING HAS HAPPENED
-//SWAPS EQUALS FALSE
-//LOOP UNTIL WE HAVE CHECKED ALL UNSORTED NUMBERS IN ARRAY
-//	IF CURRENT NUMBER IS GREATER THAN THE NEXT THEN
-//		SWAP CURRENT NUMBER AND NEXT NUMBER
-//		SWAPS EQUALS TRUE
-//	END IF
-//END LOOP
-//END LOOP
+
